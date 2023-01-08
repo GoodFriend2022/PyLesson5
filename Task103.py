@@ -26,7 +26,6 @@ def Polynomial(array):
             polynom.append(str(array[i]))
             polynom.append(' * x' * length + ' + ')
     polynom.pop(-1)
-    polynom.append(' = 0')
     return polynom
         
 degree = int(input('Введите натуральную степень многочлена > '))
