@@ -22,4 +22,4 @@ if isInt(firstNumber) and isInt(secondNumber) and int(firstNumber) >= 0 and int(
     print(Sum(int(firstNumber), int(secondNumber)))
 else:
     print('Необходимо ввести ЦЕЛЫЕ НЕОТРИЦАТЕЛЬНЫЕ ЧИСЛА!' +
-    'Перезапустите программу и попробуйте ещё раз')
+    ' Перезапустите программу и попробуйте ещё раз')
