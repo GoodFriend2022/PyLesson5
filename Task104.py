@@ -23,4 +23,7 @@ poly = poly.replace('x', f'{x}')
 poly = poly.split(' ')
 
 print(poly)
-print(f'Сумма одночленов многочлена равна = {ResultPoly(poly)}')
+result = f'Sum = {ResultPoly(poly)}'
+
+with open('file_sum.txt', 'w') as data:
+    data.write(result)
