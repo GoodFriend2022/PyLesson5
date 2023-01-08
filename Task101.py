@@ -5,5 +5,13 @@
 
 import math
 
+def Rounding(number, precision):
+    count = 0
+    while precision < 1:
+        count += 1
+        precision *= 10
+    return round(number, count)
 
-print(round(math.pi(), 3))
+d = float(input('Введите желаемую точность вывода числа ПИ > '))
+
+print(Rounding(math.pi, d))
