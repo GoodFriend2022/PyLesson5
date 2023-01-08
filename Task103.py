@@ -25,7 +25,10 @@ def Polynomial(array):
         elif array[i] > 1:
             polynom.append(str(array[i]))
             polynom.append(' * x' * length + ' + ')
-    polynom.pop(-1)
+    if array[len(array) - 1] == 1:
+        polynom.append('1')
+    if '+' in polynom[len(polynom) - 1]:
+        polynom[len(polynom) - 1] = polynom[len(polynom) - 1].replace(' + ', '')
     return polynom
         
 degree = int(input('Введите натуральную степень многочлена > '))
